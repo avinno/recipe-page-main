@@ -73,6 +73,15 @@ section {
 	gap: 1.5rem;
 }
 
+footer {
+	margin-bottom: 1rem;
+	padding: 0 2rem;
+}
+
+footer p {
+	text-align: center;
+}
+
 .recipe-photo {
 	border-radius: 1rem;
 	max-width: 100%;
@@ -128,6 +137,9 @@ hr {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	border: none;
+	height: 1px;
+	background-color: var(--stone-150);
 }
 
 tbody {
@@ -163,4 +175,37 @@ th {
 	text-align: left;
 	width: 50%;
 	color: var(--stone-600);
+}
+
+@media (max-width: 500px) {
+  body {
+  	padding: 0;
+  }
+
+  main {
+  	border-radius: 0;
+  	padding: 0;
+  	padding-bottom: 2.5rem;
+  }
+
+  section {
+  	padding: 0 2rem;
+  }
+
+  .recipe-photo {
+  	border-radius: 0;
+  }
+
+  .prep-time {
+  	margin: 0 2rem;
+  }
+
+  hr {
+  	margin: 0 auto;
+  	width: calc(100% - 4rem);
+  }
+
+  h1 {
+  	font-size: 2.25rem;
+  }
 }
